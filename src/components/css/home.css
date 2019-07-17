@@ -1,0 +1,82 @@
+.banner{
+    margin-top: 86px;
+	text-align: center;
+	color: #fff;
+	background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/00/03/04/16561cc598ddd84.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+    background-position: center;
+    position: fixed; 
+    top: 0; 
+    /* left: 0;  */
+   
+    min-width: 100%;
+    min-height: 100%;
+   
+
+    background-attachment: scroll;
+    background-position: center center;
+
+}
+.banner-text{
+	padding:220px 0 203px 0;
+}
+.banner-heading{
+	font-family: 'Roboto', 'sans-serif';
+	font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+	color:white;
+}
+.banner-sub-heading{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+	color:#fff;
+}
+
+.btn-banner{
+	padding:5px 20px;
+	border-radius:10px;
+	font-weight:700;
+	line-height:1.5;
+	text-align:center;
+	color:#fff;
+	text-transform:uppercase;
+}
+
+@media (max-width:500px)
+{.banner-text{
+	padding:150px 0 150px 0;
+}
+.banner-heading{
+	font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.banner-sub-heading{
+	font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 40px;
+}
+}
+
+@media (max-width:768px){
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+	.banner-sub-heading{
+	font-size: 23px;
+    font-weight: 200;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+}
+.container {
+    width: 100%;
+}
