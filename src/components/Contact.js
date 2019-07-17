@@ -1,25 +1,39 @@
 import React,{Component} from 'react';
-import Submit from './Submit';
 import "./css/contact.css";
 import "../header/Header";
+import Modal from 'react-awesome-modal';
 
 export default class Contact extends Component{
     constructor(props) {
         super(props);
         this.state = {
-          showComponent: false,
+          visible : false
         };
-        this._onButtonClick = this.onButtonClick.bind(this);
+      
       }
     
-      onButtonClick() {
+      openModal=()=> {
         this.setState({
-          showComponent: true
+            visible : true
         });
-      }
+    }
+ 
+    closeModal=()=> {
+        this.setState({
+            visible : false
+        });
+    }
     render(){
+      const Modal1=(
+        <Modal visible={this.state.visible} width="400" height="250" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+        <div className="wrap">
+            <h1>Thank You!</h1>
+            <h5>We will get back to you soon.</h5>
+            <button className="wrap-btn" onClick={() => this.closeModal()}>Close</button>
+        </div>
+      </Modal>
+      )
         return(
-            
             <div className="wrapper">
                 <h1>
                     Contact Us
@@ -31,14 +45,14 @@ export default class Contact extends Component{
                    <input type = 'text' className="input" placeholder="Phone" />
                    <input type = 'text'  className="input" placeholder="Subject" />
                   </div>
+                  {Modal1}
                   <div className="msg">
                     <textarea placeholder="Message"></textarea>
                     <div >
                         <button className="btn" 
-                        onClick={this.onButtonClick}
+                        onClick={() => this.openModal()} 
                         >Send</button>
-                        {this.state.showComponent ?
-                        <Submit /> : null } 
+                       
                     </div>
                   </div>
                </div>

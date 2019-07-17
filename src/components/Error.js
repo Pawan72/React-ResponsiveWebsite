@@ -6,7 +6,6 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                
                 <div className="banner">
                     <div className="container">
                         <div className="banner-text">
@@ -20,8 +19,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                
-             </div>
+            </div>
         )
     }
 }
