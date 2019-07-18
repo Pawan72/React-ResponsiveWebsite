@@ -47,17 +47,25 @@
 	text-transform:uppercase;
 }
 
-@media only screen and (max-width:500px) 
+/* @media only screen and (max-width:500px) 
 {
-/* .banner-text{
+.banner-text{
     height:100%;
 	padding:150px 0 550px 0;
-} */
+}
 .banner-heading{
     position: absolute;
-    top:20%;    
+    top:16%;    
+}
+} */
+@media (max-width: 500px)
+{
+.banner-heading {
+    position: absolute;
+    top: 15% !important;
 }
 }
+
 
 @media (max-width:768px){
 	.banner-text{
@@ -68,13 +76,11 @@
     width: 100%;
 }
 
-/* @media only screen and (max-width:400px){   
-    .banner-text{
-        height: 100%;
-        
-         
-    }
+@media only screen and (max-width:430px){   
+    
     .banner-heading{
-        margin-left: 20px;
+        position: absolute;
+        top:30%;
+        font-size:50px;
     }
-} */
+}
