@@ -13,12 +13,9 @@ export default class Home extends Component {
                                 Welcome<br/>
                                 Glad to see you here.
                             </div>
-                            <div className="banner-sub-heading">
-                               {this.props.title}
-                            </div>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
         )
     }

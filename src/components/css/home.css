@@ -47,21 +47,19 @@
 	text-transform:uppercase;
 }
 
-@media (max-width:500px)
+@media only screen and (max-width:400px) 
 {
 .banner-text{
-	padding:150px 0 150px 0;
+    height:100%;
+	padding:150px 0 550px 0;
 }
 .banner-heading{
+    position: absolute;
+    top:18%;
+    margin-left: 80px;
 	font-size: 30px;
     line-height: 30px;
-    margin-bottom: 20px;
-}
-.banner-sub-heading{
-	font-size: 10px;
-    font-weight: 200;
-    line-height: 10px;
-    margin-bottom: 40px;
+    
 }
 }
 
@@ -69,13 +67,18 @@
 	.banner-text{
 	padding:150px 0 150px 0;
 }
-	.banner-sub-heading{
-	font-size: 23px;
-    font-weight: 200;
-    line-height: 23px;
-    margin-bottom: 40px;
-}
 }
 .container {
     width: 100%;
 }
+
+/* @media only screen and (max-width:400px){   
+    .banner-text{
+        height: 100%;
+        
+         
+    }
+    .banner-heading{
+        margin-left: 20px;
+    }
+} */
