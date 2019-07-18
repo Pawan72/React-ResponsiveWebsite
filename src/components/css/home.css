@@ -47,19 +47,15 @@
 	text-transform:uppercase;
 }
 
-@media only screen and (max-width:400px) 
+@media only screen and (max-width:500px) 
 {
-.banner-text{
+/* .banner-text{
     height:100%;
 	padding:150px 0 550px 0;
-}
+} */
 .banner-heading{
     position: absolute;
-    top:18%;
-    margin-left: 80px;
-	font-size: 30px;
-    line-height: 30px;
-    
+    top:20%;    
 }
 }
 
