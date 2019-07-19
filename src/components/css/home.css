@@ -2,7 +2,7 @@
     margin-top: 86px;
 	text-align: center;
 	color: #fff;
-	background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/00/03/04/16561cc598ddd84.jpg");
+	background-image: url("./slide4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh; 
@@ -47,17 +47,7 @@
 	text-transform:uppercase;
 }
 
-/* @media only screen and (max-width:500px) 
-{
-.banner-text{
-    height:100%;
-	padding:150px 0 550px 0;
-}
-.banner-heading{
-    position: absolute;
-    top:16%;    
-}
-} */
+
 @media (max-width: 500px)
 {
 .banner-heading {
